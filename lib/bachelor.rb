@@ -12,6 +12,7 @@ def get_first_name_of_season_winner(data, season)
         if "status".value == "Winner"
         name_array << details_1[:"name"].split(" ")
         name_string = name_array[0]
+        end
       end
     end
   end
