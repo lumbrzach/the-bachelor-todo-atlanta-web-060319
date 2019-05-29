@@ -57,7 +57,7 @@ end
 
 def get_average_age_for_season(data, season)
   ages_array = []
-  average_age = ""
+  average_age = 0
   data.each do |season_num, individuals|
     if season_num == season
       individuals.each do |attributes|
@@ -67,5 +67,7 @@ def get_average_age_for_season(data, season)
     end
   end
   binding.pry
-  ages_array
+  ages_array = ages_array.map {|int| int.to_f}
+  averge_age = ages_array.average 
+  return average_age
 end
