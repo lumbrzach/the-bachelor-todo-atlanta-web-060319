@@ -8,7 +8,7 @@ def get_first_name_of_season_winner(data, season)
       # binding.pry
       if info == "Winner"
          first_name = individuals["name"]
-         first_name.split(" ").first
+         first_name.split(" ").[0]
       end
     end
   end
