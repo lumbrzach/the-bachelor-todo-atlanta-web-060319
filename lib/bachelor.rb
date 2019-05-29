@@ -6,7 +6,7 @@ def get_first_name_of_season_winner(data, season)
     # season_num.to_sym.each do |details_2|
       # binding.pry
       if season_num == season && "status" == "Winner"
-      # binding.pry
+      binding.pry
         "name".split(" ")[0]
       end
     # end
