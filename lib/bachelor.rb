@@ -71,5 +71,5 @@ def get_average_age_for_season(data, season)
   # binding.pry
   average_age = ages_array.sum/ages_array.length
   # binding.pry
-  return average_age.to_i
+  return average_age.round
 end
