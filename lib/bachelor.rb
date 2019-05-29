@@ -69,7 +69,9 @@ def get_average_age_for_season(data, season)
   # binding.pry
   ages_array = ages_array.map {|int| int.to_f}
   # binding.pry
-  averge_age = ages_array.each {|i| i+i}
-  average_age = average_age/ages_array.length
+  ages_array.each do |i|
+    average_age = i + i
+    binding.pry
+  end
   return average_age
 end
