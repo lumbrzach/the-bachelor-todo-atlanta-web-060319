@@ -5,8 +5,8 @@ def get_first_name_of_season_winner(data, season)
     # binding.pry
     if season == season_num
       attrib.each do |attributes|
-        if attributes[:status] == "Winner"
-          return attributes[:name].split(" ")[0]
+        if "status" == "Winner"
+          return "name".split(" ")[0]
         end
       end
     end
