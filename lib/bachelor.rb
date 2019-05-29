@@ -46,7 +46,7 @@ def get_occupation(data, hometown)
     individuals.each do |attributes|
       if attributes["hometown"] == hometown
         # binding.pry
-        contestant = attributes.find {|i| i.include? "occupation"}
+        contestant = attributes["occupation"]
       end
     end
   end
