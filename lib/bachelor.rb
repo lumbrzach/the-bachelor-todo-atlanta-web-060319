@@ -7,7 +7,7 @@ def get_first_name_of_season_winner(data, season)
     # binding.pry
     if season_num == season
       # binding.pry
-      name_array << details["name"].split(" ")
+      name_array << details_1["name"].split(" ")
       name_string = name_array[0]
     end
   end
