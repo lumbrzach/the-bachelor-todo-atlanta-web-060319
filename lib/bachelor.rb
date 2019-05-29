@@ -3,11 +3,14 @@ require "pry"
 def get_first_name_of_season_winner(data, season)
   name_array = []
   name_string =""
-  data.each do |season_num, details|
-    binding.pry
-    if details["status"] = "Winner"
-      name_array << details["name"].split(" ")
-      name_string = name_array[0]
+  data.each do |season_num, details_1|
+    # binding.pry
+    season_num.each do |details_2, info|
+      binding.pry
+      if details["status"] = "Winner"
+        name_array << details["name"].split(" ")
+        name_string = name_array[0]
+      end
     end
   end
   # binding.pry
