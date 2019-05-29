@@ -16,9 +16,9 @@ def get_contestant_name(data, occupation)
   data.each do |season, individuals|
     individuals.each do |attributes|
       binding.pry
-      if "occupation" == occupation
+      if attributes["occupation"] == occupation
         # binding.pry
-        individuals["name"]
+        attributes["name"]
       end
     end
   end
