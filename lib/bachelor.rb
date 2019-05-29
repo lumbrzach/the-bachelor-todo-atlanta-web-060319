@@ -9,7 +9,7 @@ def get_first_name_of_season_winner(data, season)
       # binding.pry
       details_1.each do |details_2, info|
         # binding.pry
-        if "status".value == "Winner"
+        if "status" == "Winner"
         name_array << details_1[:"name"].split(" ")
         name_string = name_array[0]
         end
