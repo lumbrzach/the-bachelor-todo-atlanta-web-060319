@@ -1,10 +1,12 @@
 require "pry"
 
 def get_first_name_of_season_winner(data, season)
-  data[season].each do |attributes|
+  data[season].each do |individuals|
     # binding.pry
-    if "status" == "Winner"
-      return "name".split(" ")[0]
+    individuals.each do |attributes, info|
+      if "status" == "Winner"
+        return "name".split(" ")[0]
+      end
     end
   end
 end
