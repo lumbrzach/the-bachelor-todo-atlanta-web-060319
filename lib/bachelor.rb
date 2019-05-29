@@ -46,7 +46,7 @@ def get_occupation(data, hometown)
   data.each do |season, individuals|
     individuals.each do |attributes|
       if attributes["hometown"] == hometown
-        binding.pry
+        # binding.pry
         jobs_array << attributes["occupation"]
         contestant_job = jobs_array[0]
       end
