@@ -5,12 +5,11 @@ def get_first_name_of_season_winner(data, season)
   name_string =""
   data.each do |season_num, details_1|
     # binding.pry
-    season_num.each do |details_2, info|
+    if season_num == season
       binding.pry
-      if details["status"] = "Winner"
-        name_array << details["name"].split(" ")
-        name_string = name_array[0]
-      end
+      details["status"] = "Winner"
+      name_array << details["name"].split(" ")
+      name_string = name_array[0]
     end
   end
   # binding.pry
