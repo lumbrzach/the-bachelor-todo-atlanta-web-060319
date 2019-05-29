@@ -44,7 +44,7 @@ def get_occupation(data, hometown)
   contestant = ""
   data.each do |season, individuals|
     individuals.each do |attributes|
-      if attributes["hometown"].include?(hometown)
+      if attributes["hometown"] == hometown
         contestant = attributes["occupation"].find
       end
     end
